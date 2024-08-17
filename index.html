@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Web Development</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Learn Web Development: From Basics to Advanced</h1>
+        <p>Your guide to mastering HTML, CSS, JavaScript, React, and Next.js</p>
+    </header>
+
+    <main>
+        <section id="html-basics">
+            <h2>HTML Basics</h2>
+            <p>HTML is the foundation of web development. Below are some basic examples:</p>
+            <div class="code-snippet">
+                <pre>
+&lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+                </pre>
+                <div class="output">
+                    <h1>Hello, World!</h1>
+                    <p>This is a paragraph.</p>
+                </div>
+            </div>
+            <div id="html-playground">
+                <h3>Try it yourself: Make a simple checklist but use List tags, copy the tags below and get started by typing in between the li tag! <br>&lt;ul> <br> &lt;li>&lt;/li> <br> &lt;/ul></h3>
+                <textarea id="html-input" placeholder="Write your HTML code here..."></textarea>
+                <button onclick="updateHTMLOutput()">Run</button>
+                <div id="html-output"></div>
+            </div>
+        </section>
+
+        <section id="css-basics">
+            <h2>CSS Basics</h2>
+            <p>CSS is used to style HTML elements. Here's a simple example:</p>
+            <div class="code-snippet">
+                <pre>
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+    text-align: center;
+}
+                </pre>
+                <div class="output" style="background-color: lightblue; text-align: center;">
+                    <h1 style="color: navy;">Styled Heading</h1>
+                </div>
+            </div>
+            <div id="css-playground">
+                <h3>Try it yourself: make the page background black</h3>
+                <textarea id="css-input" placeholder="Write your CSS code here..."></textarea>
+                <button onclick="updateCSSOutput()">Run</button>
+                <div id="css-output"></div>
+                <h2>A full guide to getting started making webpages and styling them with cascading style sheets</h2>
+                <a href="https://www.youtube.com/watch?v=HGTJBPNC-Gw" class="video">HTML + CSS in 4 hours</a>
+            </div>
+        </section>
+
+        <section id="js-basics">
+            <h2>JavaScript Basics</h2>
+            <p>JavaScript adds interactivity to your web pages. Here's an example:</p>
+            <div class="code-snippet">
+                <pre>
+&lt;button onclick="alert('Hello, World!')"&gt;Click Me&lt;/button&gt;
+                </pre>
+                <div class="output">
+                    <button onclick="alert('Hello, World!')">Click Me</button>
+                </div>
+            </div>
+            <div id="js-playground">
+                <h3>Try it yourself: see how the console works, type console.log('Hello Console'); then press f12 or CTRL+SHIFT+I and click 'console'</h3>
+                <textarea id="js-input" placeholder="Write your JavaScript code here..."></textarea>
+                <button onclick="updateJSOutput()">Run</button>
+                <div id="js-output"></div>
+                <h2>Here is a zero to hero javascript course, everything you need to be a professional is here</h2>
+                <a href="https://www.youtube.com/watch?v=lfmg-EJ8gm4" class="video">Javascript in 12 hours</a>
+                <h2>Concepts you need to understand</h2>
+                <a href="https://www.youtube.com/watch?v=lkIFF4maKMU&pp=ygUid2hhdCBqYXZhc2NyaXB0IHlvdSBuZWVkIGZvciByZWFjdA%3D%3D" class="video">100+ Javascript concepts you Need to Know</a>
+                <br><br>
+                <a class="video" href="https://www.youtube.com/watch?v=ACaT1Gfhe6I&pp=ygUid2hhdCBqYXZhc2NyaXB0IHlvdSBuZWVkIGZvciByZWFjdA%3D%3D">What javascript is most commonly used in React</a>
+            </div>
+        </section>
+
+        <section id="react-basics">
+            <h2>React Basics</h2>
+            <p>React is a JavaScript library for building user interfaces. Below is a sample component:</p>
+            <div class="code-snippet">
+                <pre>
+function HelloWorld() {
+    return &lt;h1&gt;Hello, React!&lt;/h1&gt;;
+}
+                </pre>
+            </div>
+            <h2>Here is a 100 second summary of this library</h2>
+            <a href="https://www.youtube.com/watch?v=Tn6-PIqc4UM&pp=ygUid2hhdCBqYXZhc2NyaXB0IHlvdSBuZWVkIGZvciByZWFjdA%3D%3D" class="video">100 Second intro to react</a>
+            <h2>Here is a video to get you started, follow through and test your knowledge</h2>
+            <a class="video" href="https://www.youtube.com/watch?v=CgkZ7MvWUAA">React in 5 hours</a>
+            <p>To learn more, check out the <a href="https://reactjs.org/docs/getting-started.html" target="_blank">official React documentation</a>.</p>
+        </section>
+
+        <section id="nextjs-basics">
+            <h2>Next.js Basics</h2>
+            <p>Next.js is a React framework for building server-side rendered applications. To get started, visit the <a href="https://nextjs.org/learn" target="_blank">Next.js tutorial</a>. Come back to this when you understand more.</p>
+            <h2>Here is a video to help you understand what the hell this shit is</h2>
+            <a href="https://www.youtube.com/watch?v=Sklc_fQBmcs" class="video">Next.js in 100 SECONDS</a>
+            <h2>Here is a full guide to Next.js</h2>
+            <a href="https://www.youtube.com/watch?v=wm5gMKuwSYk&list=PL6QREj8te1P7gixBDSU8JLvQndTEEX3c3" class="video">Business approach to learning next.js</a> 
+            <br>(I need to watch this too)
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Retarded 2024 Web Development Guide</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
